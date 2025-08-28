@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <stylE>
+      /*CSS Code Start*/
+
+    </stylE>
+  </head>
+  <body>
+    <!--Body Start-->
+    <div id="dv">
+    <h1 id="h4">First Game</h4>
+    <button id="btn1" onclick="
+    fn3cmti();
+    ">Start Game</button>
+    <button id="btn4" onclick="window.location.reload();">Reload Game</button><br>
+    <div id="dv1"  class="dv"></div>
+    <div id="dv2"  class="dv"></div>
+    <div id="dv3"  class="dv"></div><br>
+    <div id="dv4"  class="dv"></div>
+    <div id="dv5"  class="dv"></div>
+    <div id="dv6"  class="dv"></div><br>
+    <div id="dv7"  class="dv"></div>
+    <div id="dv8"  class="dv"></div>
+    <div id="dv9"  class="dv"></div><br>
+    <div id="dv10" class="dv"></div>
+    <div id="dv11" class="dv"></div>
+    <div id="dv12" class="dv"></div><br>
+    <div id="dv13" class="dv"></div>
+    <div id="dv14" class="dv"></div>
+    <div id="dv15" class="dv"></div><br>
+    <button id="btn2" class="btn" onclick="fn5lh();">Left</button>
+    <button id="btn3" class="btn" onclick="fn5rh();">Right</button>
+    <p id="pg1"></p>
+    <p id="pg2"></p>
+    </div>
+    <style id="css1">
+      body {
+        touch-action: manipulation;
+      }
+      .dv {
+          display: inline-block;
+          margin: 0px;
+          border: 0px;
+          padding: 0px;
+          height: 250px;
+          width: 250px;
+      }
+      
+      #dv {
+          height: fit-content;
+          width: fit-content;
+          display: inline-block;
+          border: solid 6px black;
+          border-radius: 20px;
+          margin: 1%;
+          padding: 2%;
+      }
+
+      #h4, #btn1, #btn4 {
+        display: inline-block;
+        height: 100px;
+        width: 200px;
+      }
+
+      .btn {
+        height: 250px;
+        width: 250px;
+        border: solid 10px black;
+        border-radius: 40px;
+        align-content: center;
+        margin: 2% 2% 2% 10%;
+      }
+    </style>
+    <style id="cssA"></style>
+    <style id="cssB"></style>
+    <style id="cssC"></style>
+    <style id="cssD"></style>
+    <style id="cssF">#dv14 {background-color: green;}</style>
+    <style id="cssE"></style>
+    
+
+    <script id="js1">
+      let v1rn = 0;
+      let v2g = 2;
+      let v2b = 0;
+      let v3s = 0;
+      //JavaScript Code Start
+      function fn5lh() {
+        if (document.querySelector('#cssF').innerHTML === `#dv14 {background-color: green;}`) {
+              document.querySelector('#cssF').innerHTML = `#dv13 {background-color: green;}`;
+              v2g = 1;
+            } else if (document.querySelector('#cssF').innerHTML === `#dv13 {background-color: green;}`) {
+              document.querySelector('#cssF').innerHTML = `#dv13 {background-color: green;}`;
+              v2g = 1;
+            } else if (document.querySelector('#cssF').innerHTML === `#dv15 {background-color: green;}`) {
+              document.querySelector('#cssF').innerHTML = `#dv14 {background-color: green;}`;
+              v2g = 2;
+            };
+      };
+
+      function fn5rh() {
+        if (document.querySelector('#cssF').innerHTML === `#dv14 {background-color: green;}`) {
+              document.querySelector('#cssF').innerHTML = `#dv15 {background-color: green;}`;
+              v2g = 3;
+            } else if (document.querySelector('#cssF').innerHTML === `#dv13 {background-color: green;}`) {
+              document.querySelector('#cssF').innerHTML = `#dv14 {background-color: green;}`;
+              v2g = 2;
+            } else if (document.querySelector('#cssF').innerHTML === `#dv15 {background-color: green;}`) {
+              document.querySelector('#cssF').innerHTML = `#dv15 {background-color: green;}`;
+              v2g = 3;
+            };
+      };
+
+      
+      document.addEventListener('keydown', function(event) {
+          //left
+        if(event.keyCode == 37) {
+          fn5lh();
+        }
+        //right
+        else if(event.keyCode == 39) {
+          fn5rh();
+        }
+      });
+      
+
+      function fn1dv2dv3() {
+        document.querySelector('#cssA').innerHTML = `
+          #dv2, #dv3 {
+            background-color: blue;
+          }
+        `;
+        setTimeout(() => {
+          document.querySelector('#cssA').innerHTML = `
+          #dv2, #dv3 {
+            background-color: white;
+          }
+        `;
+        }, 249);
+      };
+
+      function fn1dv1dv3() {
+          document.querySelector('#cssA').innerHTML =`
+            #dv1, #dv3 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssA').innerHTML =`
+            #dv1, #dv3 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv1dv2() {
+          document.querySelector('#cssA').innerHTML =`
+            #dv1, #dv2 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssA').innerHTML =`
+            #dv1, #dv2 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv5dv6() {
+          document.querySelector('#cssB').innerHTML =`
+            #dv5, #dv6 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssB').innerHTML =`
+            #dv5, #dv6 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv4dv6() {
+          document.querySelector('#cssB').innerHTML =`
+            #dv4, #dv6 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssB').innerHTML =`
+            #dv4, #dv6 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv4dv5() {
+          document.querySelector('#cssB').innerHTML =`
+            #dv4, #dv5 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssB').innerHTML =`
+            #dv4, #dv5 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv8dv9() {
+          document.querySelector('#cssC').innerHTML =`
+            #dv8, #dv9 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssC').innerHTML =`
+            #dv8, #dv9 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv7dv9() {
+          document.querySelector('#cssC').innerHTML =`
+            #dv7, #dv9 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssC').innerHTML =`
+            #dv7, #dv9 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv7dv8() {
+          document.querySelector('#cssC').innerHTML =`
+            #dv7, #dv8 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssC').innerHTML =`
+            #dv7, #dv8 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv11dv12() {
+          document.querySelector('#cssD').innerHTML =`
+            #dv11, #dv12 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssD').innerHTML =`
+            #dv11, #dv12 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv10dv12() {
+          document.querySelector('#cssD').innerHTML =`
+            #dv10, #dv12 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssD').innerHTML =`
+            #dv10, #dv12 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv10dv11() {
+          document.querySelector('#cssD').innerHTML =`
+            #dv10, #dv11 {
+              background-color: blue;
+            }
+          `;
+          setTimeout(() => {
+            document.querySelector('#cssD').innerHTML =`
+            #dv10, #dv11 {
+              background-color: white;
+            }
+          `;
+          }, 249);
+      };
+
+      function fn1dv14dv15() {
+          document.querySelector('#cssE').innerHTML =`
+            #dv14, #dv15 {
+              background-color: blue;
+            }
+          `;
+          v2b = 1;
+          setTimeout(() => {
+            document.querySelector('#cssE').innerHTML = ``;
+          v2b = 0;
+          }, 249);
+      };
+
+      function fn1dv13dv15() {
+          document.querySelector('#cssE').innerHTML = `
+            #dv13, #dv15 {
+              background-color: blue;
+            }
+          `;
+          v2b = 2;
+          setTimeout(() => {
+            document.querySelector('#cssE').innerHTML = ``;
+          v2b = 0;
+          }, 249);
+      };
+
+      function fn1dv13dv14() {
+          document.querySelector('#cssE').innerHTML =`
+            #dv13, #dv14 {
+              background-color: blue;
+            }
+          `;
+          v2b = 3;
+          setTimeout(() => {
+            document.querySelector('#cssE').innerHTML = ``;
+          v2b = 0;
+          }, 249);
+      };
+
+
+      function fn2r() {
+        if (v1rn === 0) {
+          setTimeout(fn1dv2dv3, 250);
+          setTimeout(fn1dv5dv6, 500);
+          setTimeout(fn1dv8dv9, 750);
+          setTimeout(fn1dv11dv12, 1000);
+          setTimeout(fn1dv14dv15, 1250);
+        } else if (v1rn === 1) {
+          setTimeout(fn1dv1dv3, 250);
+          setTimeout(fn1dv4dv6, 500);
+          setTimeout(fn1dv7dv9, 750);
+          setTimeout(fn1dv10dv12, 1000);
+          setTimeout(fn1dv13dv15, 1250);
+        } else if (v1rn === 2 || v1rn === 3) {
+          setTimeout(fn1dv1dv2, 250);
+          setTimeout(fn1dv4dv5, 500);
+          setTimeout(fn1dv7dv8, 750);
+          setTimeout(fn1dv10dv11, 1000);
+          setTimeout(fn1dv13dv14, 1250);
+        } else {document.querySelector('#h4').innerHTML = `System Error 1`;}
+      };
+
+      function fn3cm() {
+        v1rn = Math.floor((Math.random())*3);
+        fn2r();
+        v3s++;
+        document.querySelector('#pg1').innerHTML = `Your Score = ${v3s}...`
+
+
+      };
+
+      
+      function fn3cmti() {
+        let myGm = setInterval(fn3cm, 1250);
+        function fn6go() {
+          document.querySelector('#pg2').innerHTML = `Game Over...`;
+          clearInterval(myGm); 
+        };
+        
+        setInterval(() => {
+          if ((v2g === 1 && v2b === 2) || (v2g === 1 && v2b ===3)) {
+            fn6go();
+          } else if ((v2g === 2 && v2b === 1) || (v2g === 2 && v2b ===3)) {
+            fn6go();
+          } else if ((v2g === 3 && v2b === 1) || (v2g === 3 && v2b ===2)) {
+            fn6go();
+          };
+        }, 150);
+      };
+
+      
+
+      
+
+    </script>
+  </body>
+
+</html>
